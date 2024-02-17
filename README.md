@@ -17,9 +17,12 @@ I think I made this in 3 or 4 days. Main sticking point was Rust API. Rust is **
 
 ## Getting Started
 To run the project ensure you have docker and docker compose installed.
-Run with `docker compose up`.
-I wrote this on Linux, don't know if `docker compose up` command works cross-platform.
-After starting the database, follow the instructions in `database/web-scraper` to populate the database with chord progressions.
+
+Start with the initialization script, `./initial_setup.sh`.
+
+Then, run with `docker compose up`.
+
+On first run, the api takes forever to compile. Note this if you go to the website.
 <hr>
 
 ## Basic Project Structure
