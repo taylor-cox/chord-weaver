@@ -1,0 +1,5 @@
+/target
+ssl-certs/*
+!ssl-certs/generate_certs.sh
+.spotify-env
+logs/

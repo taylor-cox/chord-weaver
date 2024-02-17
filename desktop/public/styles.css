@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-color: #cec3a5;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* *********** */
+/* Page Header */
+/* *********** */
+
+header {
+  padding-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#page-title-description {
+  /* width: 30%; */
+  padding-left: 1em;
+}
+
+#page-title, #page-description {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#page-title {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+
+#page-description {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/* ************ */
+/* Page Content */
+/* ************ */
+
+#content {
+  display: flex;
+  height: 100%;
+  background-color: #b08432;
+  padding-top: 4em;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top: 3px solid black;
+}
+
+/* ************************ */
+/* Chord Generation Content */
+/* ************************ */
+
+#random-chord-progressions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 3em 0em;
+  padding-right: 10%;
+}
+
+#song-name, #song-artist, #num-chords, #genre {
+  width: 50%;
+  text-align: center;
+}
+
+.descriptor {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+#p-song-name, #p-song-artist, #p-num-chords, #p-genre {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+#p-chord-progression {
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+#chord-progression {
+  width: 100%;
+  text-align: center;
+}
+
+#shuffle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+
+#shuffle-button {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1em;
+  border-radius: 100%;
+  margin: 0;
+  border: none;
+  background-color: #895112;
+}
+
+#shuffle-image {
+  width: 6em;
+  height: 6em;
+  transform: scale(-1, 1);
+  cursor: pointer;
+  transition: all 0.2s;
+  filter: invert(17%) sepia(12%) saturate(2766%) hue-rotate(333deg) brightness(94%) contrast(106%);
+}
+
+#shuffle-image:hover {
+  transform: scale(-1.1, 1.1);
+  rotate: 60deg;
+}
+
+#shuffle-image:active {
+  transform: scale(-0.9, 0.9);
+  rotate: 360deg;
+}
+
+#spotify-container {
+  height: 100%;
+  width: 22em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chord Weaver</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+
+    <!-- Cool font. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- JQuery -->
+    <script src="/jquery-3.7.1.min.js"></script>
+    <!-- Spotify iFrame -->
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <!-- JS env variables -->
+    <script src="/config.js"></script>
+    <!-- Custom Javascript -->
+    <script src="/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Page header. -->
+    <header>
+      <a href="https://en.wikipedia.org/wiki/Ploceidae">
+        <img
+          src="/img/chord-weaver-logo.jpeg"
+          alt="Chord Weaver Logo"
+          width="150px"
+          height="150px"
+        />
+      </a>
+      <div id="page-title-description">
+        <p id="page-title">Chord Weaver</p>
+        <p id="page-description">Generate random chord progressions.</p>
+      </div>
+    </header>
+
+    <!-- Page content. -->
+    <div id="content">
+      <div id="random-chord-progressions">
+        <!-- Song Name -->
+        <!-- 
+        "Ghostbusters" is a song written by American musician Ray Parker Jr. 
+        as the theme to the 1984 film Ghostbusters, and included on its 
+        soundtrack. Debuting at number 68 on June 16, 1984, the song peaked 
+        at No. 1 on the Billboard Hot 100 on August 11, staying there for 
+        three weeks (Parker Jr.'s only number one on that chart), and at 
+        No. 2 on the UK Singles Chart on September 16, staying there for three
+        weeks. The song reentered the UK Top 75 on November 2, 2008 at No. 49
+        and again on November 5, 2021, at No. 38.
+        -->
+        <div id="song-name">
+          <p class="descriptor">Song Name</p>
+          <hr />
+          <p id="p-song-name">Ghostbusters</p>
+        </div>
+
+        <!-- Song Artist -->
+        <div id="song-artist">
+          <p class="descriptor">Artist</p>
+          <hr />
+          <p id="p-song-artist">Ray Parker Jr.</p>
+        </div>
+
+        <!-- Num chords -->
+        <div id="num-chords">
+          <p class="descriptor"># Chords</p>
+          <hr />
+          <p id="p-num-chords">7</p>
+        </div>
+
+        <!-- Genre -->
+        <div id="genre">
+          <p class="descriptor">Genre</p>
+          <hr />
+          <p id="p-genre">Pop/Rock</p>
+        </div>
+
+        <!-- Chord Progression -->
+        <div id="chord-progression">
+          <p class="descriptor">Chord Progression</p>
+          <hr />
+          <p id="p-chord-progression">I-i-i7-i(maj7)-IV-IV7-m7</p>
+        </div>
+
+        <!-- Shuffle Button -->
+        <div id="shuffle-container">
+          <button id="shuffle-button">
+            <img id="shuffle-image" src="/shuffle.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Spoofy -->
+      <div id="spotify-container">
+        <div id="embed-iframe"></div>
+      </div>
+    </div>
+  </body>
+</html>

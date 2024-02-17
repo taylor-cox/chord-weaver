@@ -1,0 +1,3 @@
+# Desktop Application
+Built with Tauri. Tauri > Electron because <img src="./gotta-go-fast.png" width=50/>.
+This was extremely fast to throw together with the website already created. Pretty much just a `cargo tauri init` and copy-paste from website, and suddenly I have a desktop application. The binary is pretty large (151 mb for basically just a website), don't know how other platforms compare and don't know how well it works cross platform.

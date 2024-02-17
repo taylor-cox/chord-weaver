@@ -1,0 +1,1 @@
+INSERT INTO progressions (genre, artist, song_name, num_chords, chord_roman_numeral, link) VALUES (%s, %s, %s, %s, %s, %s)

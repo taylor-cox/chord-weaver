@@ -1,0 +1,13 @@
+version: 2.24.5
+
+services:
+  cache:
+    image: "redis:7.2.4-bookworm"
+    restart: always
+    command: redis-server --save 20 1 --loglevel warning --requirepass password
+    ports:
+      - "6379:6379"
+    hostname: cache
+    # environment:
+      # - IN_DOCKER_ENV: Yes
+    

@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2024-02-17T19:42:06.470Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="sJJ5heXf_MECXCQxTPcH" version="23.1.5" type="device">
+  <diagram name="Page-1" id="6Tmp_VLHeYRIny0-tAqf">
+    <mxGraphModel dx="1434" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-1" target="gtDs1JZUeHkmyseJK-nY-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-1" value="&lt;div&gt;Website&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;jQuery&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="90" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-2" value="&lt;div&gt;Desktop App&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tauri&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="90" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-3" target="gtDs1JZUeHkmyseJK-nY-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-3" value="&lt;div&gt;Mobile App&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;???" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="90" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-4" target="gtDs1JZUeHkmyseJK-nY-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="310" />
+              <mxPoint x="420" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-14" value="&lt;div&gt;Spotify&lt;/div&gt;&lt;div&gt;API Token&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;" parent="gtDs1JZUeHkmyseJK-nY-11" vertex="1" connectable="0">
+          <mxGeometry x="0.5043" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-4" target="gtDs1JZUeHkmyseJK-nY-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="310" />
+              <mxPoint x="420" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-15" value="Song&lt;div&gt;Information&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;" parent="gtDs1JZUeHkmyseJK-nY-12" vertex="1" connectable="0">
+          <mxGeometry x="0.5391" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-4" value="&lt;div&gt;API&lt;/div&gt;&lt;div&gt;Rust - Axum&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="280" y="260" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-9" value="&lt;div&gt;Postgres&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="530" y="200" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-10" value="Redis" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="530" y="360" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=classicThin;startFill=1;" parent="1" source="gtDs1JZUeHkmyseJK-nY-16" target="gtDs1JZUeHkmyseJK-nY-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-16" value="API: CRUD operations for songs,&lt;br&gt;and querying Spotify API&lt;br&gt; for songs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;labelBorderColor=none;rounded=0;glass=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="440" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-18" value="Spotify" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.514;entryY=0.971;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" target="gtDs1JZUeHkmyseJK-nY-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330.5" y="260" as="sourcePoint" />
+            <mxPoint x="329.53999999999996" y="185.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gtDs1JZUeHkmyseJK-nY-20" value="&lt;div&gt;Query for&lt;/div&gt;&lt;div&gt;song uris.&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;border=true;noLabel=0;labelBorderColor=default;spacingTop=0;" parent="gtDs1JZUeHkmyseJK-nY-19" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,21 @@
+version: 2.24.5
+
+services:
+  api:
+    image: "rust:1.76.0-buster"
+    restart: always
+    ports:
+      - "3000:3000"
+    command: "cargo run --release"
+    depends_on:
+      - database
+    networks:
+      - client-side
+      - server-side
+    volumes:
+      - .:/app
+    working_dir: /app
+    env_file:
+      - ./.env
+    environment:
+      DATABASE_URL: "postgres://postgres:password@postgres:5432/postgres"

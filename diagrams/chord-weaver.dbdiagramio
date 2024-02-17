@@ -1,0 +1,8 @@
+Table progressions {
+  id SERIAL [pk] 
+  genre  VARCHAR(255) [not null]
+  artist  VARCHAR(255) [not null]
+  song_name  VARCHAR(255) [not null]
+  num_chords INTEGER [not null]
+  link  VARCHAR(255) [not null]
+}

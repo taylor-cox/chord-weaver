@@ -1,0 +1,21 @@
+version: 2.24.5
+
+services:
+  website:
+    image: 'node:21-bookworm-slim'
+    restart: always
+    expose:
+      - 8080
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      sh -c "./generate_config.sh &&
+      npm ci && 
+      npm run start"
+    depends_on:
+      - api
+    networks:
+      - client-side
+    environment:
+      - MY_APP_API_URL=https://localhost:3000

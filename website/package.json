@@ -1,0 +1,14 @@
+{
+  "name": "chord-weaver-website",
+  "version": "0.0.1",
+  "description": "Chord Weaver Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -S true -C ./ssl-certs/cert.pem -K ./ssl-certs/key.pem --cors --port 443"
+  },
+  "author": "Taylor Cox",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

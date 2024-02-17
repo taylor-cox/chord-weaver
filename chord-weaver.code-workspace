@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "chord-weaver",
+			"path": "."
+		},
+		{
+			"path": "api"
+		},
+		{
+			"path": "website"
+		},
+		{
+			"path": "desktop"
+		},
+		{
+			"path": "mobile"
+		},
+		{
+			"path": "database"
+		},
+		{
+			"path": "cache"
+		},
+		{
+			"path": "tests"
+		}
+	],
+}

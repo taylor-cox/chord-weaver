@@ -1,0 +1,26 @@
+version: 2.24.5
+
+include:
+  # - ./database/docker-compose.yml
+  # - ./cache/docker-compose.yml
+  - ./api/docker-compose.yml
+  - ./website/docker-compose.yml
+
+services:
+  database:
+    extends:
+      file: ./database/docker-compose.yml
+      service: database
+    networks:
+      - server-side
+  cache:
+    extends:
+      file: ./cache/docker-compose.yml
+      service: cache
+    networks:
+      - server-side
+
+networks:
+  client-side:
+    driver: bridge
+  server-side: {}
