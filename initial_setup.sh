@@ -18,7 +18,6 @@ cd ../../database
 docker compose up -d
 sleep 15
 cd ./web-scraper
-pwd
 ./add_scraped_data.sh
 echo "Added scraped data to database."
 cd ..
