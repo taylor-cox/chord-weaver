@@ -12,7 +12,7 @@ I overengineered this for fun.
 
 Sometimes the song shown with Spotify isn't correct because it queries the Spotify API on the fly from db song name and artist, and the db data isn't cleaned from the web scraping.
 
-I think I made this in 3 or 4 days. Main sticking point was Rust API and getting `docker compose` to do what I wanted it to. Rust is ***slow*** to develop, and my impl is hacked together.
+I made this in 3 or 4 days. Main sticking point was Rust API and getting `docker compose` to do what I wanted it to. Rust is ***slow*** to develop, and my impl is hacked together.
 <hr>
 
 ## Getting Started
