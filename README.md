@@ -18,6 +18,8 @@ I think I made this in 3 or 4 days. Main sticking point was Rust API. Rust is **
 ## Getting Started
 To run the project ensure you have docker and docker compose installed.
 
+In addition, you need Spotify Client ID & Secret.
+
 Start with the initialization script, `./initial_setup.sh`.
 
 Then, run with `docker compose up`.
