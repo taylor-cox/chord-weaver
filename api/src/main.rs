@@ -1,5 +1,5 @@
 use std::env;
-use std::net::SocketAddr;
+use std::net::{Ipv4Addr, SocketAddr, SocketAddrV4};
 use std::path::PathBuf;
 
 use axum::http::Method;
@@ -85,8 +85,10 @@ async fn main() {
   let (ip_addr_arr, port) = get_ip_port_from_env().await;
   let addr = SocketAddr::from((ip_addr_arr, port));
   tracing::debug!("listening on {}", addr);
-  axum_server::bind_rustls(addr, config)
-    .serve(app.into_make_service())
+  // HTTPs and HTTP server.
+  // TODO: Remove HTTP server.
+  axum_server_dual_protocol::bind_dual_protocol(addr, config)
+    .serve(app.clone().into_make_service())
     .await
     .unwrap();
 }

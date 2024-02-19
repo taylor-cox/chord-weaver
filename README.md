@@ -48,7 +48,7 @@ Directory Layout
 ├── desktop <──────────────────────────── Rust Tauri Desktop Application
 ├── diagrams <─────────────────────────── Code to generate diagrams
 ├── docker-compose.yml <───────────────── Docker Compose Config to start whole project
-├── mobile <───────────────────────────── Mobile Application (TODO)
+├── mobile <───────────────────────────── Mobile Application
 ├── readme-images <────────────────────── Readme Images
 ├── README.md <────────────────────────── Readme
 ├── tests <────────────────────────────── All tests throughout the project (WIP)
