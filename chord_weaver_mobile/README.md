@@ -3,6 +3,8 @@ Fine.
 
 A new Flutter project.
 
+I started with Apache Cordova, but it's deprecated.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
