@@ -1,20 +1,156 @@
----
 openapi: 3.0.0
+    # url: https://virtserver.swaggerhub.com/taylor-cox/chord-weaver/1.0.0
 info:
+  description: Chord Weaver API documentation.
+  version: "1.0.0"
   title: Chord Weaver API
-  description: Chord Weaver API
-  version: 1.0.0
 servers:
-- url: https://virtserver.swaggerhub.com/taylor-cox/chord-weaver/1.0.0
-  description: SwaggerHub API Auto Mocking
-- url: https://localhost:3000/
-  description: Local Server
-paths: {}
-components:
-  schemas:
-    Schema:
-      type: object
-      properties:
-        id:
-          type: integer
-          format: int64
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/taylor-cox/chord-weaver/1.0.0
+  - url: https://localhost:3000/
+    description: Local Server
+paths:
+  /chord-progressions:
+    get:
+      parameters: 
+        - name: id
+          in: query
+          description: Query by song ID.
+          schema:
+            type: integer
+        - name: song
+          in: query
+          description: Query by song name.
+          schema:
+            type: string
+        - name: artist
+          in: query
+          description: Query by artist name.
+          schema:
+            type: string
+        - name: num_chords
+          in: query
+          description: Query by num chords in song.
+          schema:
+            type: integer
+        - name: progression
+          in: query
+          description: Query by the literal chord progression.
+          schema:
+            type: string
+      
+      responses:
+        '200':
+          description: Successfully returned a chord progression.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    artist: 
+                      type: string
+                    chord_roman_numerals: 
+                      type: string
+                    genre:
+                      type: string
+                    link: 
+                      type: string
+                    num_chords: 
+                      type: integer
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                  message:
+                    type: string
+    
+    post:
+      parameters: 
+        - name: id
+          in: query
+          description: Query by song ID.
+          schema:
+            type: integer
+        - name: song
+          in: query
+          description: Query by song name.
+          schema:
+            type: string
+        - name: artist
+          in: query
+          description: Query by artist name.
+          schema:
+            type: string
+        - name: num_chords
+          in: query
+          description: Query by num chords in song.
+          schema:
+            type: integer
+        - name: progression
+          in: query
+          description: Query by the literal chord progression.
+          schema:
+            type: string
+      
+      responses:
+        '200':
+          description: Successfully returned a chord progression.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    artist: 
+                      type: string
+                    chord_roman_numerals: 
+                      type: string
+                    genre:
+                      type: string
+                    link: 
+                      type: string
+                    num_chords: 
+                      type: integer
+                    song_name: 
+                      type: string
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                  message:
+                    type: string
+  
+  
+  /spotify:
+    get:
+      parameters:
+        - name: search
+          in: query
+          description: Query the Spotify API
+          schema:
+            type: object
+            properties:
+              search:
+                type: string
+                description: Search query for Spotify.
+      responses:
+        '200':
+          description: Searched Spotify successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error string.
