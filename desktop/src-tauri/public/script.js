@@ -20,8 +20,7 @@ function add_shuffle_button_functionality() {
     console.info("Getting chord progression with id = " + randomProgressionID);
 
     // Fetch content from API.
-    // TODO: Make this URL dynamic (?).
-    fetch('https://172.18.0.2:3000/chord-progression?id=' + randomProgressionID)
+    fetch('http://localhost:3000/chord-progression?id=' + randomProgressionID)
     .then(response => response.json())
     .then(populate_page_with_data)
     .catch((error) => {
@@ -51,7 +50,7 @@ function populate_page_with_data(data) {
 
   let search_term = cleaned_song_name + "%20" + cleaned_artist_name;
 
-  fetch('https://172.18.0.2:3000/spotify?search=' + search_term)
+  fetch('http://localhost:3000/spotify?search=' + search_term)
   .then(response => response.json())
   .then((data) => {
     console.log(data);
