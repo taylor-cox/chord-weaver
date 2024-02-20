@@ -28,7 +28,7 @@
         "icons/chord-weaver-logo.icns",
         "icons/chord-weaver-logo.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.chord-weaver.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
